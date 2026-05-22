@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$data = [Console]::In.ReadToEnd() | ConvertFrom-Json; $f = if ($data.tool_response.filePath) { $data.tool_response.filePath } else { $data.tool_input.file_path }; if ($f) { npx prettier --write $f 2>$null }",
+            "timeout": 30,
+            "statusMessage": "Formatting with Prettier..."
+          }
+        ]
+      }
+    ]
+  }
+}
