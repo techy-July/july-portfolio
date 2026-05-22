@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Font CSS variables injected by next/font/google via app/layout.tsx:
+   --font-cormorant  (Cormorant Garamond)
+   --font-dm-sans    (DM Sans) */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Font families */
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans:  var(--font-dm-sans), 'Helvetica Neue', Arial, sans-serif;
+
+  /* Brand colours */
+  --color-teal-base:       #3B545A;
+  --color-teal-dark:       #2a3d42;
+  --color-teal-xdark:      #1a2e32;
+  --color-teal-muted:      #4e6e75;
+  --color-lavender-soft:   #D4CAE0;
+  --color-lavender-mid:    #b8aed0;
+  --color-lavender-xlight: #ede9f5;
+  --color-blue-mist:       #CBD8DC;
+  --color-sage-light:      #C8D5C2;
+  --color-sage-mid:        #a8b8a2;
+  --color-sage-xdark:      #2a3e2a;
+  --color-video-mauve:     #9e8585;
+  --color-amber-accent:    #C4922A;
+
+  /* Greyscale */
+  --color-grey-900: #1a1a1a;
+  --color-grey-800: #2d2d2d;
+  --color-grey-600: #5a5a5a;
+  --color-grey-400: #9a9a9a;
+  --color-grey-200: #d4d4d4;
+  --color-grey-100: #f0f0f0;
+  --color-grey-50:  #f8f8f8;
+
+  /* Text-on-dark aliases (footer, dark sections) */
+  --color-on-dark:       #ffffff;
+  --color-on-dark-sub:   rgba(255, 255, 255, 0.70);
+  --color-on-dark-muted: rgba(255, 255, 255, 0.45);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  background-color: var(--color-grey-50);
+  color: var(--color-grey-800);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Respect user's motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
