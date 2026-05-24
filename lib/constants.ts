@@ -14,7 +14,7 @@ export const MAILTO_UGC =
   `mailto:${BRAND_EMAIL}?subject=UGC%20Collab%20Enquiry&body=Hi%20July%2C%20I%27m%20reaching%20out%20about%20a%20potential%20UGC%20collaboration%20for%20%5BBrand%20Name%5D.%20I%27d%20love%20to%20discuss%20what%20we%20could%20create%20together.`
 
 // TODO: Replace with real Ko-fi links before launch
-export const FREE_TEMPLATE_URL = 'TODO_FREE_TEMPLATE_URL'
+export const FREE_TEMPLATE_URL = 'https://ko-fi.com/s/b85ccd55d3'
 export const PRODUCT_URL_1 = 'TODO_PRODUCT_URL_1'
 export const PRODUCT_URL_2 = 'TODO_PRODUCT_URL_2'
 export const PRODUCT_URL_3 = 'TODO_PRODUCT_URL_3'

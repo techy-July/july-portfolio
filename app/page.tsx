@@ -6,6 +6,7 @@ import ServiceCards from '@/components/home/ServiceCards'
 // import FreeTemplateSection from '@/components/home/FreeTemplateSection'
 import Footer from '@/components/layout/Footer'
 import { SITE_URL } from '@/lib/constants'
+import FreeTemplateSection from '@/components/home/FreeTemplateSection'
 
 export const metadata: Metadata = {
   alternates: { canonical: SITE_URL },
@@ -18,7 +19,7 @@ export default function Home() {
       <AboutCard />
       <ServiceCards />
       {/* <StatsRow /> */}
-      {/* <FreeTemplateSection /> */}
+      <FreeTemplateSection />
       <Footer />
     </>
   )
