@@ -18,19 +18,20 @@ export default function HomeHero() {
         brands reach audiences through authentic UGC and ready-to-use digital tools.
       </p>
 
-      {/* <p className="mb-6 font-sans text-[10px] text-grey-400">
-        ↓ free template waiting below — no sign-up needed
-      </p> */}
-
       <div className="flex flex-wrap gap-3">
         <Button variant="primary" href="/brand">
           Build my brand
         </Button>
+
 {/* 
         <Button variant="ghost" href="/products">
           Browse products
         </Button> */}
       </div>
+
+      <p className="pt-3 font-sans text-[10px] text-grey-400">
+        ↓ free template waiting below — no sign-up needed
+      </p>
     </section>
   )
 }
