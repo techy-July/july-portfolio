@@ -27,7 +27,7 @@ export default function FreeTemplateSection() {
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
-            <Button variant="primary" href={PRODUCT_URL_1} external>
+            <Button variant="primary" href={'/products'}>
               Explore products
             </Button>
             <Button variant="ghost" href={FREE_PRODUCT_URL} external>
