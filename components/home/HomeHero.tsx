@@ -23,10 +23,9 @@ export default function HomeHero() {
           Build my brand
         </Button>
 
-{/* 
         <Button variant="ghost" href="/products">
           Browse products
-        </Button> */}
+        </Button>
       </div>
 
       <p className="pt-3 font-sans text-[10px] text-grey-400">

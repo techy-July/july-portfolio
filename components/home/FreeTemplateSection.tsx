@@ -2,7 +2,7 @@
 import Button from "@/components/ui/Button";
 import Pill from "@/components/ui/Pill";
 import SectionDivider from "@/components/ui/SectionDivider";
-import { FREE_TEMPLATE_URL, PRODUCT_URL_1 } from "@/lib/constants";
+import { FREE_PRODUCT_URL, PRODUCT_URL_1 } from "@/lib/constants";
 
 export default function FreeTemplateSection() {
   return (
@@ -27,10 +27,10 @@ export default function FreeTemplateSection() {
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
-            {/* <Button variant="primary" href={PRODUCT_URL_1} external>
+            <Button variant="primary" href={PRODUCT_URL_1} external>
               Explore products
-            </Button> */}
-            <Button variant="ghost" href={FREE_TEMPLATE_URL} external>
+            </Button>
+            <Button variant="ghost" href={FREE_PRODUCT_URL} external>
               GET FREE
             </Button>
           </div>

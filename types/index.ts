@@ -1,34 +1,42 @@
+export type ProductCategory =
+  // | "template"
+  | "checklist"
+  | "prompt-pack"
+  // | "affiliate";
+
 export interface ProductData {
-  id: number
-  category: string
-  name: string
-  description: string
-  price: string
-  url: string
-  isBestSeller: boolean
+  id: number;
+  category: ProductCategory;
+  name: string;
+  description: string;
+  price: string;
+  url: string;
+  image?: string;
+  isFree?: boolean;
+  isBestSeller?: boolean;
 }
 
 export interface VideoCardData {
-  videoId: string
-  contentType: string
-  brandName: string
-  productDescription: string
-  linkLabel: string
-  linkUrl: string
+  videoId: string;
+  contentType: string;
+  brandName: string;
+  productDescription: string;
+  linkLabel: string;
+  linkUrl: string;
 }
 
 export interface ProcessStepData {
-  number: string
-  title: string
-  description: string
+  number: string;
+  title: string;
+  description: string;
 }
 
 export interface WhatICreateData {
-  title: string
-  description: string
+  title: string;
+  description: string;
 }
 
 export interface StatData {
-  value: string
-  label: string
+  value: string;
+  label: string;
 }
