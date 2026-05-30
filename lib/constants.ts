@@ -26,8 +26,8 @@ export const VIDEO_ID_3 = 'TODO_VIDEO_ID_3'
 
 export const SOCIAL_INSTAGRAM = 'https://instagram.com/simplytechbyjuly'
 export const SOCIAL_THREADS    = 'https://threads.com/@simplytechbyjuly'
-export const SOCIAL_TIKTOK    = 'https://tiktok.com/@techy_july'
-export const SOCIAL_YOUTUBE    = 'https://youtube.com/@july-in-tech'
+export const SOCIAL_TIKTOK    = 'https://tiktok.com/@simplytechbyjuly'
+export const SOCIAL_YOUTUBE    = 'https://youtube.com/@simplytechbyjuly'
 export const SOCIAL_KOFI       = 'https://ko-fi.com/simplytechbyjuly'
 
 export const PRODUCTS: ProductData[] = [

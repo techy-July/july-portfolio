@@ -32,13 +32,13 @@ const socialLinks = [
     icons: Icons.Threads_Icon,
   },
   {
-    label: "@techy_July",
+    label: "@simplytechbyjuly",
     href: SOCIAL_TIKTOK,
     srLabel: "TikTok (opens in new tab)",
     icons: Icons.Tiktok_Icon,
   },
   {
-    label: "@July-in-tech",
+    label: "@simplytechbyjuly",
     href: SOCIAL_YOUTUBE,
     srLabel: "YouTube (opens in new tab)",
     icons: Icons.Youtube_Icon,
