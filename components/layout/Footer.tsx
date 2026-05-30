@@ -13,9 +13,9 @@ import {
 import { Icons } from "@/components/ui/Icons";
 
 const serviceLinks = [
-  { label: "Digitalizing your Brand", href: "/brand"},
+  { label: "Digitalizing your Brand", href: "/brand" },
   { label: "UGC Collaborations", href: "/ugc" },
-  { label: "Product Shops", href: null }, // disabled — Phase 2
+  { label: "Product Shops", href: "/products" }, // disabled — Phase 2
 ];
 
 const socialLinks = [
@@ -42,7 +42,7 @@ const socialLinks = [
     href: SOCIAL_YOUTUBE,
     srLabel: "YouTube (opens in new tab)",
     icons: Icons.Youtube_Icon,
-  }, 
+  },
   {
     label: "@July",
     href: SOCIAL_KOFI,
@@ -127,7 +127,7 @@ export default function Footer({
           <div className="mt-2 grid grid-cols-3 gap-x-2 gap-y-2">
             {socialLinks.map(({ label, href, srLabel, icons: Icon }) => (
               <ExternalLink
-                key={label}
+                key={href}
                 href={href}
                 srLabel={srLabel}
                 className="flex items-center gap-1.5 font-sans text-[9px] text-on-dark-sub hover:text-on-dark"
