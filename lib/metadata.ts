@@ -16,7 +16,7 @@ export const rootMetadata: Metadata = {
     siteName: BRAND_NAME,
     images: [
       {
-        url: "/public/assets/Brand_OG.jpg",
+        url: "/assets/Brand_OG.png",
         width: 1200,
         height: 630,
         alt: BRAND_NAME,
