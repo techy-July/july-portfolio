@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SITE_URL, BRAND_NAME } from "@/lib/constants";
 
 const OG_IMAGE = {
-  url: "/assets/brand_OG.png",
+  url: "/assets/brand_OG.jpg",
   width: 1200,
   height: 630,
   alt: BRAND_NAME,
