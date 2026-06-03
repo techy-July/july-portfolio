@@ -7,7 +7,7 @@ import type {
 } from "@/types";
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://simplytechbyjuly.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://july-portfolio-rosy.vercel.app";
 export const BRAND_NAME = "Simply Tech by July";
 export const BRAND_EMAIL = "simplytechbyjuly@gmail.com";
 
