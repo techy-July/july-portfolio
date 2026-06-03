@@ -1,7 +1,11 @@
+import type { Metadata } from "next";
 import SectionDivider from "@/components/ui/SectionDivider";
 import ProductCatalog from "@/components/products/ProductCatalog";
 import { PRODUCTS } from "@/lib/constants";
 import Footer from "@/components/layout/Footer";
+import { productsMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = productsMetadata;
 
 export default function ProductsPage() {
   return (
