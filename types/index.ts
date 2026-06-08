@@ -1,8 +1,7 @@
 export type ProductCategory =
   // | "template"
-  | "checklist"
-  | "prompt-pack"
-  // | "affiliate";
+  "checklist" | "prompt-pack";
+// | "affiliate";
 
 export interface ProductData {
   id: number;
@@ -29,6 +28,14 @@ export interface ProcessStepData {
   number: string;
   title: string;
   description: string;
+}
+
+export interface CaseStudyData {
+  id: number;
+  problem: string;
+  cost: string;
+  built: string;
+  result: string;
 }
 
 export interface WhatICreateData {

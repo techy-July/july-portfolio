@@ -5,8 +5,8 @@ const cards = [
   {
     title: "Brand Digitalization",
     description:
-      "From strategy to a live branded website — I build your entire digital presence so your brand looks as good online as it does in real life.",
-    ctaLabel: "Build your brand with July ›",
+      "I identify what's actually broken in your digital presence — and build the thing that fixes it. Not a template. Not a theme. The right solution for the actual problem.",
+    ctaLabel: "See how I work ›",
     ctaHref: "/brand",
     bgClassName: "bg-lavender-soft",
     icon: <Gem size={20} className="text-lavender-mid" />,

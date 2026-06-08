@@ -4,6 +4,7 @@ import type {
   ProcessStepData,
   WhatICreateData,
   StatData,
+  CaseStudyData,
 } from "@/types";
 
 export const SITE_URL =
@@ -59,7 +60,7 @@ export const PRODUCTS: ProductData[] = [
     image: "Brand_Audit_preview.jpg",
     isFree: true,
     isBestSeller: false,
-  }
+  },
 ];
 
 export const VIDEO_CARDS: VideoCardData[] = [
@@ -86,6 +87,27 @@ export const VIDEO_CARDS: VideoCardData[] = [
     productDescription: "Product Description",
     linkLabel: "Affiliate Link ›",
     linkUrl: "TODO_VIDEO_URL_3",
+  },
+];
+
+export const CASE_STUDIES: CaseStudyData[] = [
+  {
+    id: 1,
+    problem:
+      "A founder's portfolio was communicating 'I build websites' — not the actual depth of capability behind the work.",
+    cost: "Cold traffic landed and left. No enquiries. No trust signal strong enough to make someone stay.",
+    built:
+      "A problem-first portfolio structured around outcomes — clear voice, case studies that lead with the problem, and CTAs tied to real intent.",
+    result: "TODO — fill in after launch data is available.",
+  },
+  {
+    id: 2,
+    problem:
+      "Founders were spending 2+ hours a day reading emails that could be summarised in under five minutes.",
+    cost: "High-value decision-making time was being consumed by low-value inbox triage — at the direct expense of actual work.",
+    built:
+      "An agentic email reader that reads, categorises, and summarises an inbox automatically. Built with Claude AI. Project in progress.",
+    result: "TODO — update when project ships.",
   },
 ];
 
