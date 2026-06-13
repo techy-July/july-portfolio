@@ -1,11 +1,11 @@
-import { Charm } from 'next/font/google'
-import Pill from '@/components/ui/Pill'
+import { Charm } from "next/font/google";
+import Pill from "@/components/ui/Pill";
 
 const charm = Charm({
-  subsets: ['latin'],
-  weight: ['400'],
-  display: 'swap',
-})
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
 
 export default function AboutCard() {
   return (
@@ -28,7 +28,9 @@ export default function AboutCard() {
           <p className="font-sans text-[9px] uppercase tracking-[0.12em] text-grey-400">
             ABOUT ME
           </p>
-          <Pill variant="username" className="w-fit text-teal-muted">SimplyTechbyJuly</Pill>
+          <Pill variant="username" className="w-fit text-teal-muted">
+            SimplyTechbyJuly
+          </Pill>
           <p className="font-sans text-[10px] text-grey-400">
             Brand Builder · Software Engineer · Content Creator
           </p>
@@ -37,23 +39,27 @@ export default function AboutCard() {
 
       {/* Skill pills */}
       <div className="mb-3 flex flex-wrap gap-2">
-        <Pill variant="skill">Branding Sites</Pill>
-        <Pill variant="skill">Brand Collabs</Pill>
-        <Pill variant="skill">Digital Products</Pill>
+        <Pill variant="skill" className="bg-lavender-soft!">
+          Branding Sites
+        </Pill>
+        <Pill variant="skill" className="bg-blue-mist!">
+          Brand Collabs
+        </Pill>
+        <Pill variant="skill" className="bg-sage-light!">
+          Digital Products
+        </Pill>
       </div>
 
       <hr className="mb-3 border-t border-grey-200" />
 
       {/* Bio */}
-      <p className="mb-2 font-sans text-[11px] leading-[1.6] text-grey-800">
-        I&apos;m a software engineer who builds in public (learning, creating, and shipping digital
-        tools and brand experiences while documenting every step). My work sits at the crossroads of
-        AI, cybersecurity, and honest storytelling.
-      </p>
       <p className="font-sans text-[11px] leading-[1.6] text-grey-800">
-        Whether you&apos;re a solo founder or a growing team, I help you build a digital home that
-        earns trust before you say a word.
+        I&apos;m a software engineer who builds in public (learning, creating,
+        and shipping while documenting every step). I look at your digital
+        presence, find what&apos;s actually broken or holding you back, and
+        build the fix, so whether you&apos;re a solo founder or a growing team,
+        your site earns trust before you say a word.
       </p>
     </div>
-  )
+  );
 }

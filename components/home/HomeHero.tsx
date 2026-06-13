@@ -23,7 +23,7 @@ export default function HomeHero() {
 
       <p className="pt-3 font-sans text-[10px] text-grey-400">
         ↓ free template waiting below — no sign-up needed
-      </p>
+      </p> */}
     </section>
   )
 }

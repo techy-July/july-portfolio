@@ -1,37 +1,32 @@
-import SectionDivider from "@/components/ui/SectionDivider";
-import { CASE_STUDIES } from "@/lib/constants";
-
-const LABELS = {
-  problem: "The problem",
-  cost: "Why it mattered",
-  built: "What I built",
-  result: "The result",
-} as const;
+import SectionDivider from '@/components/ui/SectionDivider'
+import { PROCESS_STEPS } from '@/lib/constants'
 
 export default function ProcessSteps() {
   return (
     <section>
-      <SectionDivider label="PROBLEMS I'VE SOLVED" />
-
-      <div className="flex flex-col gap-3 px-5 py-4">
-        {CASE_STUDIES.map((study) => (
-          <div
-            key={study.id}
-            className="flex flex-col gap-3 rounded-[10px] border border-grey-200 bg-white p-4"
-          >
-            {(["problem", "cost", "built", "result"] as const).map((key) => (
-              <div key={key}>
-                <p className="mb-[2px] font-sans text-[9px] uppercase tracking-[0.10em] text-grey-400">
-                  {LABELS[key]}
-                </p>
-                <p className="font-sans text-[11px] leading-[1.6] text-grey-700">
-                  {study[key]}
-                </p>
+      <SectionDivider label="THE PROCESS" />
+        <div className="px-5 py-4">
+          {PROCESS_STEPS.map((step, index) => (
+            <div key={step.number}>
+              <div className="flex gap-4 py-4">
+                {/* Step number */}
+                <span className="w-7 flex-shrink-0 font-serif text-[20px] font-normal text-grey-400">
+                  {step.number}
+                </span>
+                {/* Step content */}
+                <div className="flex flex-col gap-1">
+                  <h3 className="font-sans text-[12px] font-medium text-grey-800">{step.title}</h3>
+                  <p className="font-sans text-[10px] leading-[1.6] text-grey-600">
+                    {step.description}
+                  </p>
               </div>
-            ))}
-          </div>
+            </div>
+            {index < PROCESS_STEPS.length - 1 && (
+              <hr className="border-t border-grey-200" />
+            )}
+            </div>
         ))}
       </div>
     </section>
-  );
+  )
 }
