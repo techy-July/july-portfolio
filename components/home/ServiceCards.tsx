@@ -11,15 +11,15 @@ const cards = [
     bgClassName: "bg-lavender-soft",
     icon: <Gem size={20} className="text-lavender-mid" />,
   },
-  {
-    title: "UGC Brand Collabs",
-    description:
-      "Authentic, scroll-stopping content made for your brand. I create UGC videos that convert.",
-    ctaLabel: "Start a collab with July ›",
-    ctaHref: "/ugc",
-    bgClassName: "bg-blue-mist",
-    icon: <Video size={20} className="text-teal-base" />,
-  },
+  // {
+  //   title: "UGC Brand Collabs",
+  //   description:
+  //     "Authentic, scroll-stopping content made for your brand. I create UGC videos that convert.",
+  //   ctaLabel: "Start a collab with July ›",
+  //   ctaHref: "/ugc",
+  //   bgClassName: "bg-blue-mist",
+  //   icon: <Video size={20} className="text-teal-base" />,
+  // },
   {
     title: "Digital Products",
     description:

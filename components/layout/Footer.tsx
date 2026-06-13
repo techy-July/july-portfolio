@@ -14,7 +14,7 @@ import { Icons } from "@/components/ui/Icons";
 
 const serviceLinks = [
   { label: "Digitalizing your Brand", href: "/brand" },
-  { label: "UGC Collaborations", href: "/ugc" },
+  // { label: "UGC Collaborations", href: "/ugc" },
   { label: "Product Shops", href: "/products" }, // disabled — Phase 2
 ];
 
@@ -89,7 +89,9 @@ export default function Footer({
               Simply<span className="italic text-lavender-mid">Tech</span>ByJuly
             </span>
             <p className="text-grey-400 text-[9px]">
-              Brand Digitalization, UGC Collabs, and Digital products — built
+              {/* Brand Digitalization, UGC Collabs, and Digital products — built
+              with intention, delivered with clarity. */}
+              Brand Digitalization, and Digital products — built
               with intention, delivered with clarity.
             </p>
           </div>
