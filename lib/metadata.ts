@@ -10,7 +10,7 @@ const OG_IMAGE = {
 
 export const rootMetadata: Metadata = {
   title: {
-    default: `${BRAND_NAME} — Brand · UGC · Digital Products`,
+    default: `${BRAND_NAME} — I find what's broken in your digital presence and build the fix.`,
     template: `%s | ${BRAND_NAME}`,
   },
   description:
