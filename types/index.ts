@@ -47,3 +47,18 @@ export interface StatData {
   value: string;
   label: string;
 }
+
+export interface PricingPlanData {
+  id: number;
+  tag: string;
+  featured?: boolean;
+  title: string;
+  description: string;
+  priceUSD: string;
+  priceSGD: string;
+  features: string[];
+  note?: string;
+  deliveryTime: string;
+  ctaLabel: string;
+  ctaHref: string;
+}

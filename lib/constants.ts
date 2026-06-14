@@ -5,6 +5,7 @@ import type {
   WhatICreateData,
   StatData,
   CaseStudyData,
+  PricingPlanData,
 } from "@/types";
 
 export const SITE_URL =
@@ -159,4 +160,65 @@ export const STATS: StatData[] = [
   { value: "20+", label: "Brands" },
   { value: "2M+", label: "Views" },
   { value: "500+", label: "Templates" },
+];
+
+export const PRICING_PLANS: PricingPlanData[] = [
+  {
+    id: 1,
+    tag: "Quick win",
+    title: "Brand Audit",
+    description:
+      "Find out exactly what your digital presence is costing you — before spending a cent on design.",
+    priceUSD: "$150 USD",
+    priceSGD: "~SGD 200",
+    features: [
+      "A clear picture of where your digital presence is losing you trust, leads, and credibility",
+      "A written audit report with specific, prioritised fixes — not generic advice",
+      "A ranked action plan so you know exactly what to fix first and why",
+      "Clarity on whether your current presence reflects the quality of your actual business",
+    ],
+    deliveryTime: "Delivered within 3-5 business days",
+    ctaLabel: "Get started",
+    ctaHref: MAILTO_BRAND,
+  },
+  {
+    id: 2,
+    tag: "Best value",
+    featured: true,
+    title: "Brand Digitalization",
+    description:
+      "A digital presence built from the ground up — designed to reflect the real quality of your business.",
+    priceUSD: "$650 USD",
+    priceSGD: "~SGD 880",
+    features: [
+      "A brand audit that identifies exactly what's broken and what to fix",
+      "A complete brand identity — brand theme, colour palette, and typography that reflect your business",
+      "A custom-built website (1-2 pages + navigation) — built specifically for your brand story",
+      "A site that works on every device and loads fast — ready to share or drop in your bio the moment it's delivered",
+      "Full ownership — no lock-in, no subscriptions, yours completely",
+    ],
+    note: "+ Additional pages available — pricing discussed based on scope",
+    deliveryTime: "Delivered within 7-14 business days",
+    ctaLabel: "Get started",
+    ctaHref: MAILTO_BRAND,
+  },
+  {
+    id: 3,
+    tag: "Website only",
+    title: "Website Build",
+    description:
+      "Already have your brand identity sorted but just need the website to match it? This is the plan for you.",
+    priceUSD: "$450 USD",
+    priceSGD: "~SGD 610",
+    features: [
+      "A custom-built website (1-2 pages + navigation) using your existing brand assets — no templates",
+      "A site that loads fast, works on every device, and is ready to share from day one",
+      "A digital presence that finally matches the quality of the business behind it",
+      "Full ownership — no lock-in, completely yours",
+    ],
+    note: "+ Additional pages available — pricing discussed based on scope",
+    deliveryTime: "Delivered within 5-10 business days",
+    ctaLabel: "Get started",
+    ctaHref: MAILTO_BRAND,
+  },
 ];
